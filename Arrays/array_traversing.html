@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array traversing</title>
+</head>
+<body>
+    <h3>Array</h3>
+    <h4>[23,45,78,34,56,23,65,32,7,5,34]</h4>
+    <input type="text" id="element">
+    <button onclick="getElement()" >Get Element</button>
+    
+    <script>
+        let data = [23,45,78,34,56,23,65,32,7,5,34];
+
+        // for(let i = 0 ; i < data.length; i++){
+        //     document.write(data[i], " , ");
+        // };
+        function getElement(){
+            let i = document.getElementById("element").value;
+            if(i>data.length || i < 0){
+                alert("Enter valid index")
+            }else {
+            alert(data[i]);
+            }
+        }
+
+    </script>
+</body>
+</html>
